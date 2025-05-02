@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scorecard - Dream Team</title>
+  <link rel="stylesheet" href="scorecard.css" />
+  <script defer src="scorecard.js"></script>
+  <!-- Include Confetti.js -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti"></script>
+</head>
+<body class="main-bg">
+  <div class="container">
+    <h1 class="title">🎉 Your Dream Team Scorecard 🎉</h1>
+    <p class="subtitle">Here are your team's scores and the fun points!</p>
+
+    <div id="scorecard" class="grid-container">
+      <!-- Player scorecards will be dynamically added here -->
+    </div>
+
+    <div class="total-score">
+      <h2>Total Score: <span id="totalScore">0</span></h2>
+    </div>
+
+    <div class="buttons">
+        <a href="winner.html">
+          <button id="celebrateBtn">Message for the Winning Coach</button>
+        </a>
+      </div>
+
+    <footer>
+      <p>Powered by <span class="highlight">Team Baba XI</span></p>
+    </footer>
+  </div>
+</body>
+</html>

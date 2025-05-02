@@ -1,0 +1,105 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .main-bg {
+    background: linear-gradient(to bottom right, #fff5f5, #ffeaea);
+    color: #b91c1c;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 900px;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #b91c1c, #ef4444);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #4b5563;
+    margin-bottom: 2rem;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .player-card {
+    background: white;
+    border: 2px solid #f87171;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .player-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  .player-card.selected {
+    background: #fecaca;
+    border-color: #b91c1c;
+  }
+  
+  .player-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 9999px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .team-preview {
+    margin-top: 2rem;
+  }
+  
+  .buttons {
+    margin-top: 1.5rem;
+  }
+  
+  button {
+    padding: 0.5rem 1.2rem;
+    margin: 0.5rem;
+    background: linear-gradient(to right, #b91c1c, #ef4444);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #991b1b, #dc2626);
+  }
+  
+  footer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    color: #dc2626;
+  }
+  
+  

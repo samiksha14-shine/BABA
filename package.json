@@ -1,0 +1,23 @@
+{
+  "name": "hbd-baba",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss src/index.css -o dist/output.css",
+    "watch": "postcss src/index.css -o dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss7-compat": "^2.2.17",
+    "animate.css": "^4.1.1",
+    "tailwindcss": "^2.2.19"
+  }
+}

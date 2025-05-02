@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Baba! 🎂</title>
+  <link rel="stylesheet" href="scorecard.css" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
+      overflow-y: auto; /* Allow vertical scrolling */
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .container {
+      text-align: center;
+      padding: 2rem;
+      max-width: 800px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 105, 135, 0.3);
+      z-index: 1;
+      position: relative;
+    }
+
+    .title {
+      font-size: 2.8rem;
+      font-weight: 800;
+      background: linear-gradient(to right, #e11d48, #fb7185);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #374151;
+      margin-bottom: 2rem;
+    }
+
+    .message-box {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #6b7280;
+      background: #ffe4e6;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+    }
+
+    .buttons {
+      z-index: 10;
+      position: relative;
+      margin-top: 1rem;
+    }
+
+    .buttons a {
+      text-decoration: none;
+    }
+
+    .buttons button {
+      background: linear-gradient(to right, #e11d48, #fb7185);
+      color: white;
+      border: none;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      position: relative;
+      z-index: 9999;
+    }
+
+    .buttons button:hover {
+      transform: scale(1.05);
+    }
+
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      transform: rotate(45deg);
+      animation: float 8s infinite ease-in;
+      opacity: 0.6;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) rotate(45deg);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) rotate(45deg);
+        opacity: 0;
+      }
+    }
+
+    footer {
+      margin-top: 2rem;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">❤️ Happy Birthday Baba! ❤️</h1>
+    <p class="subtitle">To the greatest hero and the kindest soul I know</p>
+
+    <div class="message-box">
+      <p>
+        On your 51st birthday, I want to take a moment to reflect on how incredibly blessed I am to have you in my life. Your strength, wisdom, and kindness have shaped me into who I am today. From every lesson you’ve taught me to every moment of support you’ve given, you’ve shown me what it means to be truly selfless and loving.
+
+Baba, you are the heart of our family, the pillar that holds us all together. Your laughter, your words of wisdom, and your constant love have created a home filled with warmth and comfort. Even in your quiet moments, you inspire me to be better, work harder, and love deeper.
+
+Thank you for being my rock, my guide, and the best father I could ever ask for. I hope this day brings you as much joy and happiness as you’ve given me over the years. May this year be filled with all the love, peace, and success you deserve.
+
+Happy 51st Birthday, Baba! I love you more than words can say. ❤️ 🎉🎂
+      </p>
+    </div>
+
+    <div class="buttons">
+      <a href="index.html">
+        <button>Back to Home</button>
+      </a>
+    </div>
+
+    <footer>
+      <p>With endless love, <span class="highlight">Your Family</span></p>
+    </footer>
+  </div>
+
+  <!-- Floating hearts -->
+  <script>
+    const createHeart = () => {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = 5 + Math.random() * 5 + "s";
+      document.body.appendChild(heart);
+      setTimeout(() => {
+        heart.remove();
+      }, 10000);
+    };
+
+    setInterval(createHeart, 300);
+  </script>
+</body>
+</html>
